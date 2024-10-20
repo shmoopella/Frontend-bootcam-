@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Создание заказа</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div id="chooseMenu">
+            <form action="/orders" method="POST">
+                <label for="waiterId">Выберите ID официанта:</label>
+                <select name="waiterId">
+                    {{#each waiters}}
+                        <option>{{this.id}}</option>
+                    {{/each}}
+                </select>
+                <label for="menu">Выберите позицию меню:</label>
+                <select name="menu" multiple>
+                    {{#each menu}}
+                        <option>{{this.title}}</option>
+                    {{/each}}
+                </select>
+                <p>Удерживайте нажатой кнопку <b>ctrl</b> (Windows) / <b>command</b> (Mac), чтобы выбрать несколько вариантов.</p>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </body>
+</html>

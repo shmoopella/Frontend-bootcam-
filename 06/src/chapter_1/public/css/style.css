@@ -1,0 +1,115 @@
+/* Основные стили для всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Центрирование формы и контейнеров */
+.container, .chooseMenu {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Сетка для заказов */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    justify-items: center; /* Центрирование карточек в сетке */
+}
+
+/* Общие стили для каждого блока */
+.orderItem, form {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Устанавливаем максимальную ширину для форм и заказов */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box; /* Гарантирует, что padding и border учтены в ширине */
+}
+
+/* Стили для заголовков и кнопок */
+label {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Общие стили для select, input */
+select, input[type="submit"], input[type="reset"], input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%; /* Элементы будут занимать всю ширину формы */
+    margin-bottom: 15px;
+}
+
+/* Стили для кнопок */
+input[type="submit"], input[type="button"], input[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type="reset"] {
+    background-color: #ffdb58;
+}
+
+input[type="button"] {
+    background-color: #ffdb58;
+}
+
+/* Стили для кнопок при наведении */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="reset"]:hover {
+    background-color: #e5c255;
+}
+
+/* Стили для кнопки назад */
+button {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #999;
+}
+
+/* Стили для изображений */
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Для узких экранов будет 1 колонка */
+    }
+
+    form, .orderItem {
+        max-width: 100%; /* Полная ширина на маленьких экранах */
+    }
+}

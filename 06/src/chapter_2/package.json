@@ -1,0 +1,15 @@
+{
+  "name": "cafeapp",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "pg": "^8.12.0",
+    "psql": "^0.0.1",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2"
+  },
+  "scripts": {
+    "dbr": "npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all"
+  }
+}

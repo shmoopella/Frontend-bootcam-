@@ -1,0 +1,78 @@
+#mainDiv {
+    background-color: rgba(83, 173, 212, 1);
+    height: 340px;
+    width: 580px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 245px;
+    width: 352px;
+    background-color: rgba(255, 255, 255, 1);
+    outline-style: solid;
+    outline-color: rgba(240, 244, 247, 1);
+    outline-width: 6px;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+
+#webField {
+    width: 351px;
+    height: 31px;
+    color: rgba(85, 85, 85, 1);
+    font-weight: bold;
+    botom-border: 1px solid rgba(207, 207, 207, 1);
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(247, 249, 249, 1);
+    padding-top: 10px;
+    margin-top: 0;
+    /*position: absolute;*/
+    /*top: 0px;*/
+}
+
+#Forgot {
+    color: white;
+    /*margin: 0px;*/
+    margin-top: 30px;
+}
+
+#loginButton {
+    width: 73px;
+    height: 30px;
+    background-color: rgba(233, 242, 245, 1);
+    border: 1px solid rgba(163, 184, 193, 1);
+    border-radius: 12px;
+}
+
+.inputLine {
+    width: 301px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px outset rgba(212, 212, 212, 1);
+    border-radius: 1px;
+    outline-style: solid;
+    outline-color: rgba(240, 244, 247, 1);
+    outline-width: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#rememberLine {
+    width: 187px;
+    height: 14px;
+}

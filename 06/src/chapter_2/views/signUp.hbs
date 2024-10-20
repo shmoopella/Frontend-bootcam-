@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Главная</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <form id='signupForm' action="/signup" method="POST">
+            <label for="login">Имя</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="login">Login</label><br>
+            <input type="text" id="login" name="login"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="repeatPassword">Repeat password</label><br>
+            <input type="password" id="repeatPassword" name="repeatPassword"><br>
+            <br>
+            <input type="submit" value="Войти">
+        </form>
+    {{#if field}}
+        {{#if user}}
+            <div>Такой пользователь уже зарегистрирован!</div>
+        {{else}}
+            {{#if password}}
+                {{#if createdUser}}
+                    <div>Вы зарегистрированы!</div>
+                    <input type="button" value="Перейти на страницу авторизации" onclick="window.location.href='/signin'">
+                {{/if}}
+            {{else}}
+                <div>Введенные пароли не совпадают!</div>
+            {{/if}}
+        {{/if}}
+    {{else}}
+        <div> Все поля обязательны к заполнению!</div>
+    {{/if}}
+    </body>
+<html>

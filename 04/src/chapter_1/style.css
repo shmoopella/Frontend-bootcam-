@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.main-div {
+    max-width: 620px;
+    background-color: rgb(108, 228, 220);
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 600px;
+    height: 90vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 6px;
+    justify-content: center;
+    /*margin-bottom: 10px;*/
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255);
+    text-align: center;
+    border-radius: 7px;
+    font-size: 30px;
+    color: grey;
+    align-content: center;
+
+}
+
+.item-result {
+    grid-column: 1/4;
+}
+
+#label {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
