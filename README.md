@@ -43,5 +43,5 @@
 
 
 ## Используемые инструменты
-Nodejs, Express.js, Reactб, Postman, HandleBars
+Nodejs, Express.js, React, Sequelize, Bootstrap, Postman, HandleBars
 
