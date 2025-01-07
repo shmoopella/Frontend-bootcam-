@@ -41,6 +41,20 @@
 + Fetch API
 + Cookie/Сессия
 
+Реализация web-приложения для сотрудников ресторана.
+
+### Project VII:
+Основы React:
++ Функциональные компоненты и props
++ Условный рендеринг
++ React Hooks
+
+### Project VIII:
+Продвинутый React:
++ Мемоизация
++ Работа с public API
+
+Реализация web-приложения PokemonApp.
 
 ## Используемые инструменты
 Nodejs, Express.js, React, Sequelize, Bootstrap, Postman, HandleBars
