@@ -1,0 +1,100 @@
+/* Основные стили для приложения */
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Стили для кнопок */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Общий стиль для компонентов (рамка и выравнивание) */
+.component-container {
+    width: 60%;
+    max-width: 600px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border: 2px solid #007bff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Стили для компонента StudentInfo */
+/* Общий стиль контейнера */
+.student-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #007bff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Стили текста */
+.student-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Стили изображения */
+.student-photo {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+
+/* Стили для компонента Stopwatch */
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stopwatch img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.stopwatch .time {
+    font-size: 100px;
+    font-weight: bold;
+    color: #007bff;
+}
+.somelist {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
